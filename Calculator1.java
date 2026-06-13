@@ -59,13 +59,20 @@ public class Calculator1
 		s.nextLine(); 
 		double avg = tot / 5;
 		
-		if(avg >= 95) grade = "A+";
-		else if(avg >= 90) grade = "A";
-		else if(avg >= 80) grade = "B";
-		else if(avg >= 70) grade = "C";
-		else if(avg >= 60) grade = "D";
-		else if(avg >= 50) grade = "E";
-		else grade = "F";
+		if(avg >= 95)
+			grade = "A+";
+		else if(avg >= 90)
+			grade = "A";
+		else if(avg >= 80)
+			grade = "B";
+		else if(avg >= 70)
+			grade = "C";
+		else if(avg >= 60)
+			grade = "D";
+		else if(avg >= 50)
+			grade = "E";
+		else
+			grade = "F";
 		
 		printResult(name, rollno, tot, avg, grade);
 	}
@@ -93,13 +100,20 @@ public class Calculator1
 		double avg = tot / 6;
 		
 
-		if(avg >= 95) grade = "A+";
-		else if(avg >= 90) grade = "A";
-		else if(avg >= 80) grade = "B";
-		else if(avg >= 70) grade = "C";
-		else if(avg >= 60) grade = "D";
-		else if(avg >= 50) grade = "E";
-		else grade = "F";
+		if(avg >= 95)
+			grade = "A+";
+		else if(avg >= 90)
+			grade = "A";
+		else if(avg >= 80)
+			grade = "B";
+		else if(avg >= 70)
+			grade = "C";
+		else if(avg >= 60)
+			grade = "D";
+		else if(avg >= 50)
+			grade = "E";
+		else
+			grade = "F";
 		
 		printResult(name, rollno, tot, avg, grade);
 	}
@@ -115,8 +129,8 @@ public class Calculator1
 		System.out.print("Enter the number of subjects in this semester: ");
 		int numSubjects = s.nextInt();
 		
-		int[] credits = new int[numSubjects];
-		double[] gradePoints = new double[numSubjects];
+		int credits[] = new int[numSubjects];
+		double gradePoints[] = new double[numSubjects];
 		
 		double totalEarnedPoints = 0;
 		int totalCredits = 0;
@@ -134,7 +148,7 @@ public class Calculator1
 			totalEarnedPoints += (credits[i] * gradePoints[i]);
 			totalCredits += credits[i];
 		}
-		s.nextLine(); // Clear buffer
+		s.nextLine();
 		
 		double cgpa = 0;
 		if (totalCredits > 0) {
